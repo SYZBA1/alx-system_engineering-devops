@@ -1,8 +1,14 @@
+
 # Postmortem: Web Service Outage
 
-#image
-(file:///C:/Users/SAMI/Downloads/DALL%C2%B7E%202024-09-24%2014.22.41%20-%20A%20detailed%20visual%20of%20a%20web%20service%20outage%20postmortem.%20The%20scene%20shows%20a%20timeline%20starting%20with%20an%20alert%20and%20ending%20with%20the%20restoration%20of%20services.%20I.webp)
+# image 
+
+
+file:///C:/Users/SAMI/Downloads/DALL%C2%B7E%202024-09-24%2014.50.57%20-%20A%20detailed%20visual%20of%20a%20web%20service%20outage%20postmortem.%20The%20scene%20shows%20a%20timeline%20starting%20with%20an%20alert%20and%20ending%20with%20the%20restoration%20of%20services.%20I.webp
+
 #Issue Summary
+
+
 - Duration: 3 hours, from 9:00 AM to 12:00 PM (UTC).  
 - Impact: 70% of users were unable to access the service due to a high load time and intermittent downtime. API calls failed for external services, resulting in poor user experience.  
 - Root Cause: A misconfigured load balancer in production led to increased server load, causing performance degradation and service downtime.

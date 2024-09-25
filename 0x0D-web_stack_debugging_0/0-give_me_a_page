@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Starting apache2 server
+
+service apache2 start
+
+# Check if apache2 is running and print the required message
+if service apache2 status | grep -q "active (running)"; then
+  echo "apache2 is running"
+else
+  echo "apache2 failed to start"
+fi
+

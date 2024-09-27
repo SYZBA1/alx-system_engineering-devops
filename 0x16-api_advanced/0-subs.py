@@ -25,7 +25,7 @@ def number_of_subscribers(subreddit):
 
 
 if __name__ == "__main__":
-    # Test the function by printing results
-    print(number_of_subscribers("python"))   # Existing subreddit
-    print(number_of_subscribers("nonexistingsubreddit"))  # Non-existing subreddit
+    # Ensure the function prints the result for correct output capture
+    print(number_of_subscribers("python"))   # Test with an existing subreddit
+    print(number_of_subscribers("nonexistingsubreddit"))  # Test with a non-existing subreddit
 

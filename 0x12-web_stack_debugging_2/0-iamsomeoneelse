@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
-#run a command as an especific user
+# Run a command as a specified user
 
-sudo -u "$1" whoami
+# Check if the username is provided
+if [ -z "$1" ]; then
+    echo "Error: No username provided."
+    exit 1
+fi
+
+# Check if the user exists
+if id "$1" &>/dev/null; then
+    # If the user exists, run whoami as that user
+    sudo -u "$1" whoami
+else
+    # If the user does not exist, print an error message
+    echo "Error: User '$1' does not exist."
+    exit 1
+fi
+

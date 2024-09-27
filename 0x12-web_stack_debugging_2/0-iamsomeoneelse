@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Run a command as a specified user
 
-# Check if the username is provided
+# Check if the username is provided.
 if [ -z "$1" ]; then
     echo "Error: No username provided."
     exit 1
